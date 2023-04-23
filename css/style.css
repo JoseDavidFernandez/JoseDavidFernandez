@@ -1,0 +1,495 @@
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------- GLOBAL  --------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------*/
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+}
+body{
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    overflow: clip;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*  -------- UTILITY CLASES: TITULOS --------    */
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+.main-wrap { margin: 10vh 13.5vw; }
+.wrap{
+    max-width: 1100px;
+    margin: 0 auto;
+    background: white;   
+
+}
+#startFix{ padding-top: 190px; } /* Separación para parrafos al principio */
+#endFix{ padding-top: 150px; width: 100%; } /* Separación para parrafos al final */
+#dropShadow {  /* -- style entre un descripcion y paginas -- */
+    display: block;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(0,0,0,0.09) 0%, rgba(0,0,0,0) 100%);
+    height: 85px;
+    width: 100vw;
+}
+
+
+/*  ------------------------- MENÚ NAVBAR --------------------------------- */
+/********** (DESKTOP MODE)**********/
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+    display: none;
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 85px;
+    color: #fff;
+    background-color: #1F232F;
+    z-index: 12;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.08em;
+}
+.navbar-container {
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* MENU (ENLACES) */
+.menu-items {
+    order: 2;
+    display: flex;
+}
+.menu-items li {
+    list-style: none;
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.menu-items a {
+    transition: color 0.3s ease-in-out;
+}  
+.menu-items a:hover {
+    color: #117964;
+    transition: color 0.3s ease-in-out;
+}
+
+/* LOGO */
+.logo {
+    order: 1;
+    font-size: 2.3rem;
+    margin-bottom: 0.5rem;
+}  
+
+/*  ------------------------- FOOTER --------------------------------- */
+.footer{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background: #1F232F;
+}
+/* SOCIAL MEDIA ICONS */
+.sm-footer{ padding: 15px; }
+.sm-icon {
+    font-size: 15pt;
+    color: white;
+    padding: 5px 15px;
+    margin-right: 0;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------ FONTS & TEXTSTYLES -----------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------*/
+/*  -------- GLOBAL STYLES --------    */
+h1{ font-family: 'Raleway'; }
+h2{ font-family: 'Raleway'; font-size: 30px;}
+h3{ font-family: 'Raleway'; font-size: 22px; letter-spacing: 0.07em}
+p{
+    font-size: 17px;
+    letter-spacing: 0.05em;
+    line-height: 28px;
+    text-align: justify;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+/*  -------- NAV MENÚ --------    */
+.menu-items li {
+    font-family: 'Raleway';
+    font-size: 1.2rem;
+    letter-spacing: 0.07em;
+    color: #fff;
+}
+
+/* TITULO HEADER H2 (PROYECTS, ABOUT) */
+#titleHeader { color: white; letter-spacing: 0.07em; }
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------ INDEX.html ------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------*/
+/* INDEX.HTML -> STYLE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* TITULO BIENVENIDA */
+#introText h1{
+    color: white;
+    font-size: 6vw;
+    letter-spacing: 0.07em;
+    text-align: center;
+}
+/* TITULO PRESENTACIÓN NOMBRE */
+#indexBody h3 { color: #1F232F; }
+#indexBody h2{ font-size: 46px; color: #1F232F; }
+
+/* PARRAFO DESCRIPCION */
+#indexDescripcion {font-style: italic;}
+
+
+/* INDEX.HTML -> SECTION INTROHEADER: 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#introHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1F232F;
+    width: 100%;
+}
+#introBack{
+    background-color:#1F232F;
+}
+#introImg{
+    height: 90%; 
+    opacity: 55%;
+    margin-top: 30px;
+    animation: introPicScale 12s infinite
+}
+#introSaludo{ position: absolute; }
+#introText h1{ margin: 0px 0px; }
+
+/* INDEX.HTML -> SECTION INDEXBODY: 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#indexBody {
+    width: 100vw;
+    background-color: white;
+    z-index: 10;
+}
+.relative{ position: relative; }
+#introLine {
+    height: 3px;
+    background-color: #1F232F;
+    margin-bottom: 20px;
+}
+.introbtn{ margin-top: 25px !important; }
+.btn{
+    font-size: 16px;
+    line-height: normal;
+    padding: 5px 22px;
+    border: 1px solid #1F232F;
+    letter-spacing: 0.01em;
+    color: #1F232F;
+    border: 1px solid rgba(0,0,0,0.65)
+}
+.btn:hover{
+    background-color: #1F232F;
+    color: white;
+}
+
+
+/* INDEX.HTML -> SECTION CARDS: 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.flex-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.index-card-container{
+    display: flex;
+    width: 905px;
+    height: 250px;
+    margin: 10px;
+    background: #1F232F;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 20px 40px rgba(87,84,84,0.328);
+    font-family: 'Raleway';
+    font-size: 30px;
+}
+
+.index-card-container:hover{ 
+    animation:shadow-pop-top-right 0.4s linear both;  
+} 
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------ PROYECTS.html ------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------*/
+/* PROYECTS.HTML -> STYLE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* TITULO HEADER */
+#titleHeader { 
+    color: white; 
+    letter-spacing: 0.07em;
+    padding: 150px 0 200px 0;
+}
+/* PARRAFO DESCRIPCION PROYECT */
+.proyect-descripcion p{ font-style: italic;}
+
+/* ICON GITHUB */
+.icon-proyectsGitHub{font-weight: 800; color: #1F232F; font-size: 16pt; text-align: center; }
+
+/* ICON WEB + GITHUB -> CARDS */
+.btnCard{
+    color: #1F232F;
+    padding: 1rem;
+    font-size: 18pt;
+}
+
+/* PROYECTS.HTML -> SECTION HEADER: 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.main-header{ 
+    width: 100%; 
+    height: 300px;
+    background: #1F232F;
+    text-align: center;
+}
+
+/* PROYECTS.HTML -> SECTION DESCRIPCION: 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.proyect-descripcion { padding: 10vh 3vh; } 
+
+/* PROYECTS.HTML -> SECTION CARDS: 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.proyects-main-cards{
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card-items{
+    width: 18rem;
+    height: 18rem;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: #CCD5AE;
+    transition: all 0.3s ease;
+    box-shadow: 0 20px 40px rgba(87,84,84,0.328);
+}
+.card-items:hover{
+    transform: rotate(1deg);
+    box-shadow: 0 20px 40px rgba(16,14,14,0.5);   
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------ ABOUT.html ------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------*/
+/* ABOUT.HTML -> STYLE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* TITULO HEADER */
+#titleHeader { 
+    color: white; 
+    letter-spacing: 0.07em;
+    padding: 150px 0 200px 0;
+}
+
+/* ABOUT.HTML -> SECTION HEADER: 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.main-header{ 
+    width: 100%; 
+    height: 300px;
+    background: #1F232F;
+    text-align: center;
+}
+
+/* ABOUT.HTML -> SECTION BIOGRAFIA: 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.bio{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+/*  DESCRIPCION ABOUT */
+.about-bio { padding: 0vh 3vh; font-style: italic;  }
+
+/* SKILLS ABOUT  */
+.skills{ padding: 1rem; }
+.skills img{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+/* IMG ABOUT  */
+#aboutImgProfile{
+    width: 50vh;
+    height: 50vh;
+    opacity: 90%;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------- ANIMACIONES  -----------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------*/
+
+/********** ANIMACIÓN IMG BACK AMPLITUD **********/
+#introPic {
+    height: 100vh;
+    margin-left: 50%;
+    opacity: 55%;
+    animation: introPicScale 12s infinite;
+}
+/********** ANIMACIÓN CARDS INDEX **********/
+@keyframes shadow-pop-top-right{
+    0%{box-shadow:0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e;transform:translateX(0) translateY(0)}
+    100%{box-shadow:1px -1px #3e3e3e,2px -2px #3e3e3e,3px -3px #3e3e3e,4px -4px #3e3e3e,5px -5px #3e3e3e,6px -6px #3e3e3e,7px -7px #3e3e3e,8px -8px #3e3e3e;transform:translateX(-8px) translateY(8px)}
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------- MEDIA QUERY -----------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 2000px) {
+    @keyframes introPicScale {
+        0% { transform: translate(0%) scale(-1.1, 1.1); -webkit-transform: translate(0%) scale(-1.1, 1.1); -moz-transform: translate(0%) scale(-1.1, 1.1); -ms-transform: translate(0%) scale(-1.1, 1.1); -o-transform: translate(0%) scale(-1.1, 1.1); }
+        50% { transform: translate(0%) scale(-1.2, 1.2); -webkit-transform: translate(0%) scale(-1.2, 1.2); -moz-transform: translate(0%) scale(-1.2, 1.2); -ms-transform: translate(0%) scale(-1.2, 1.2); -o-transform: translate(0%) scale(-1.2, 1.2); }
+        100% { transform: translate(0%) scale(-1.1, 1.1); -webkit-transform: translate(0%) scale(-1.1, 1.1); -moz-transform: translate(0%) scale(-1.1, 1.1); -ms-transform: translate(0%) scale(-1.1, 1.1); -o-transform: translate(0%) scale(-1.1, 1.1); }
+    }
+}
+@media screen and (max-width: 1200px) {
+    .wrap{ padding: 0 40px; }
+    @keyframes introPicScale {
+        0% { transform: translate(0%) scale(-1.0, 1.0); -webkit-transform: translate(0%) scale(-1.0, 1.0); -moz-transform: translate(0%) scale(-1.0, 1.0); -ms-transform: translate(0%) scale(-1.0, 1.0); -o-transform: translate(0%) scale(-1.0, 1.0); }
+        50% { transform: translate(0%) scale(-1.1, 1.1); -webkit-transform: translate(0%) scale(-1.1, 1.1); -moz-transform: translate(0%) scale(-1.1, 1.1); -ms-transform: translate(0%) scale(-1.1, 1.1); -o-transform: translate(0%) scale(-1.1, 1.1); }
+        100% { transform: translate(0%) scale(-1.0, 1.0); -webkit-transform: translate(0%) scale(-1.0, 1.0); -moz-transform: translate(0%) scale(-1.0, 1.0); -ms-transform: translate(0%) scale(-1.0, 1.0); -o-transform: translate(0%) scale(-1.0, 1.0); }
+    }
+}
+@media screen and (max-width: 768px) {
+    .wrap { 
+        padding: 0 40px; 
+    }
+    .navbar-container,
+    .navbar-container input[type="checkbox"]{
+        display: block !important;
+    }
+    .navbar-container {
+        position: relative;
+    }
+    .navbar-container input[type="checkbox"] {
+        position: absolute;
+        height: 25px;
+        width: 35px;
+        top: 30px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+    }
+    /* HAMBURGER  */
+    .hamburger-lines {
+        height: 23px;
+        width: 35px;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        z-index: 2;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .hamburger-lines .line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #fff;
+    }
+    .hamburger-lines .line1 { /* ANIMACION CAMBIAR HAMBUGER A  X */
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+    .hamburger-lines .line2 { /* ANIMACION CAMBIAR HAMBUGER A  X */
+        transition: transform 0.2s ease-in-out;
+    }
+    .hamburger-lines .line3 { /* ANIMACION CAMBIAR HAMBUGER A  X */
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+    /* MENU (ENLACES) */
+    .menu-items {
+        padding-top: 100px;
+        background: #1F232F;
+        height: 735px;
+        max-width: 300px;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 50px;
+        transition: transform 0.5s ease-in-out;
+        box-shadow: 5px 0px 10px 0px #aaa;
+    }
+    .menu-items li {
+        margin-bottom: 2.5rem !important;
+        font-size: 1.3rem !important;
+        font-weight: 500;
+    }
+    /* LOGO */
+    .logo {
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        font-size: 2rem;
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .menu-items {
+        transform: translateX(0);
+    }
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+        transform: rotate(35deg);
+    }
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+        transform: scaleY(0);
+    }
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+        transform: rotate(-35deg);
+    }
+}
+@media (max-width: 500px) {
+    .wrap {
+        padding: 0 40px; 
+    }
+    #aboutImgProfile{
+        width: 45vh !important;
+        height: 50vh;
+    }
+    /* LOGO */
+    .logo {
+        position: absolute;
+        top: 06px;
+        right: 15px;
+        font-size: 3rem;
+    }
+    /* MENU (ENLACES) */
+    .menu-items li {
+        margin-bottom: 2.5rem;
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+}

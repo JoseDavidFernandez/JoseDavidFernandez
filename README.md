@@ -6,6 +6,7 @@ Bienvenidos a mi portafolio personal, soy un desarrollador de aplicaciones web y
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://josedavidfernandezcomino.com)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/josedavidfernándezcomino/)
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/JoseDavidFernandez)
 
 ![Logo](https://user-images.githubusercontent.com/107296373/236514091-5f8a9760-35df-46fb-b922-f046bcbef5af.png)
 

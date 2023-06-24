@@ -17,9 +17,10 @@
 
 </head>
 <body>
-<!--  ====================================================== HEADER ====================================================== -->
+<!--- HEADER
+========================================================================= -->
     <header>
-        <!-- MENÚ -->
+        <!-- MENÚ –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <nav class="navbar">
             <div class="navbar-container container">
                 <input type="checkbox" name="" id="">
@@ -30,24 +31,24 @@
                 </div>
                 <ul class="menu-items">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="proyects.html">Proyects</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#proyects">Proyects</a></li>
                 </ul>
                 <a href="index.html">
-                    <h1 class="logo">
-                        JD
-                    </h1>
+                    <h1 class="logo">JD</h1>
                 </a>
             </div>
         </nav>
+        <!-- end MENÚ –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     </header>
-<!--  ==================================================== / HEADER ====================================================== -->
-
-<!--  ====================================================== MAIN ====================================================== -->
+<!--- end HEADER
+========================================================================= -->
+<!--- MAIN
+========================================================================= -->
     <main>
         <div id="top" tabindex="-1"></div>
-        <!--  ============================================== HERO HEADER ============================================== -->
-        <section id="introHeader">
+        <!-- HERO HEADER ––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <section class="intro-header" id="header">
             <div id="introBack">
                 <img id="introImg" src="Imagen/index/Avatar3D-JD.png">
             </div>
@@ -58,55 +59,140 @@
                 </div>            
             </div>
         </section>
-        <!--  ============================================= / HERO HEADER ============================================= -->
-
-        <!--  ============================================== HERO BODY ============================================== -->
-        <section id="indexBody">
+        <!-- end HERO HEADER –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <!-- HERO BODY –––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <section class="about" id="about">
             <!-- Descripción + caja con enlace a Proyects -->
             <div class="relative">
                 <div class="wrap">
-                    <div id="startFix"></div> <!-- Separación entre caja y caja -->
+                    <div id="startFix"></div><!-- SEPARADOR -->
                     <!--            TITULO           -->
                     <h3> HOLA.</h3>
                     <h2> MI NOMBRE ES JOSE DAVID</h2>
                     <div id="introLine"></div>
-                    <!-- <div class="nanoFix"></div> -->
-                    <!--            BREVE DESCRIPCIÓN           -->
+                    <!--            DESCRIPCIÓN           -->
                     <p id="indexDescripcion">
                         "Bienvenidos a mi portafolio personal, soy un desarrollador de aplicaciones web y marketing digital 
                         con experiencia en HTML, CSS, JavaScript, Bootstrap y PHP, así como en los CMS WordPress y Shopify.
                         En esta página encontrarás algunos de mis proyectos personales que he creado de forma autodidacta. 
-                        También puedes explorar mi página de GitHub para ver más de mis proyectos y contribuciones a proyectos de código abierto."
+                        También puedes explorar mi página de GitHub para ver más de mis proyectos y contribuciones a proyectos de código abierto.
+                        Mi enfoque se centra en la creación de soluciones web creativas y atractivas."
                     </p>
+                    <!--            SKILLS           -->
+                    <div class="skills">
+                        <img src="./Imagen/about/skills/HTML5.svg.png" alt="HTML5" id="skill_HTML5" title="HTML5">
+                        <img src="./Imagen/about/skills/CSS3.svg.png" alt="CSS3" id="skill_CSS3" title="CSS3">
+                        <img src="./Imagen/about/skills/JavaScript.png" alt="JavaScript" id="skill_JavaScript" title="JavaScript">
+                        <img src="./Imagen/about/skills/php.png" alt="PHP" id="skills_PHP" title="PHP">
+                        <img src="./Imagen/about/skills/Bootstrap.svg.png" alt="Bootstrap"  id="skill_Bootstrap" title="Bootstrap">
+                        <!-- <img src="./Imagen/about/skills/laravel.png" alt="Laravel" id="skill_Laravel" title="Laravel"> -->
+                        <img src="./Imagen/about/skills/WordPress.svg.png" alt="WordPress" id="skill_WordPress" title="WordPress">
+                        <img src="./Imagen/about/skills/Shopify.png" alt="Shopify" id="skill_Shopify" title="Shopify">
+                        <!-- <img src="./Imagen/about/skills/Figma.png" alt="Figma" id="skill_Figma" title="Figma"> -->
+                    </div>
                     <p class="introbtn">
-                        <a class="btn" href="proyects.html">Ver proyectos</a>
+                        <a class="btn" href="#proyects">Ver proyectos</a>
                     </p>
-                    <div id="endFix"></div> <!-- Separación entre caja y caja -->
+                    <!--            IMG-ABOUT           -->
+                    <div class="box-img-about">
+                        <img src="./Imagen/about/josedavid.png" id="imgProfile" alt="Jose David Fernández Comino" >
+                    </div>
+                    
+                    <div id="endFix"></div> <!-- SEPARADOR -->
                 </div>
             </div>
-            <div id="dropShadow"></div> <!-- style entre un descripcion y paginas -->
-
-            <!--            CARDS: PROYECTS, ABOUT, CONTACT           -->
-            <div class="wrap">
-                <div class="flex-card">
-                <!--            PROJECTS CARD          -->
-                    <div class="card card1">
-                        <a href="proyects.html" class="index-card-container">PROYECTS</a>
-                    </div>
-                    <!--            ABOUT CARD         -->
-                    <div id="card card2">
-                        <a href="about.html" class="index-card-container">ABOUT</a>
-                    </div>
-                </div>
-            </div>
-            <div id="endFix"></div> <!--  más margen entre div-paginas y footer -->
         </section>
-        <!--  ============================================== / HERO BODY ============================================== -->
+        <!-- end HERO BODY –––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div id="dropShadow"></div> <!-- DROPSHADOW -->
+        <!-- PROYECTS ––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <section class="proyects" id="proyects">
+            <h2 id="titleHeader">PROYECTS</h2>
+            <!-- BODY PROYECTS ––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+            <section class="wrap">
+                <div class="proyect-descripcion">
+                    <p> En esta sección podrás encontrar algunos de mis proyectos personales que he creado de forma autodidacta. 
+                        También puedes explorar mi página de GitHub para ver más de mis proyectos personales y contribuciones a 
+                        proyectos de código abierto.
+                    </p>
+                    <a class="icon-proyectsGitHub" href="https://github.com/JoseDavidFernandez" title="GitHub Jose David" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
+                </div>
+            </section>
+            <!-- end BODY PROYECTS ––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+            <!-- CARDS PROYECTS ––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+            <section class="proyects-main-cards">
+                <!--          CARD-VIAJES           -->
+                <div class="card-items" id="cardTrips">
+                    <div class="card-head">
+                        <h3 id="nameProyect">JD - Trips</h3>
+                    </div>
+                    <div class="card-body">
+                        <p id="descripcionCard"> Blog en el que he recogido un listado diferentes de lugares que he visitado. </p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btnCard website" href="https://josedavidfernandez.github.io/JD-Trips-Blog/" title="Web Site"><i class="fa-solid fa-globe"></i></a>
+                        <a class="btnCard githubPage" href="https://github.com/JoseDavidFernandez/JD-Trips-Blog" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <!--          COFFEE BLOG PAGE          -->
+                <div class="card-items" id="cardCoffee">
+                    <div class="card-head">
+                        <h3 id="nameProyect">Coffee Blog</h3>
+                    </div>
+                    <div class="card-body">
+                        <p id="descripcionCard">Blog personal donde recojo las mejores cafeterías de Barcelona y Madrid.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btnCard website" href="https://josedavidfernandez.github.io/Coffee-Shop-Guide/" title="Web Site"><i class="fa-solid fa-globe"></i></a>
+                        <a class="btnCard githubPage" href="https://github.com/JoseDavidFernandez/Coffee-Shop-Guide" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <!--          PAGE PROYECTS BOOTSTRAP  -->
+                <div class="card-items" id="cardBootstraps">
+                    <div class="card-head">
+                        <h3 id="nameProyect">Portafolio Bootstrap </h3>
+                    </div>
+                    <div class="card-body">
+                        <p id="descripcionCard">Portafolio creado con Bootstrap donde se encuentran los mejores proyectos que he realizado.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btnCard website" href="https://josedavidfernandez.github.io/Page-Proyects/" title="Web Site"><i class="fa-solid fa-globe"></i></a>
+                        <a class="btnCard githubPage" href="https://github.com/JoseDavidFernandez/Page-Proyects" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <!--          CARD-DATE               -->
+                <div class="card-items" id="cardDate">
+                    <div class="card-head">
+                        <h3 id="nameProyect">Weekday</h3>
+                    </div>
+                    <div class="card-body">
+                        <p id="descripcionCard"> Web que te dice el día de la semana en la que estás y te manda un mensaje motivador.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btnCard githubPage" href="https://github.com/JoseDavidFernandez/Weekday"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>    
+                <!--          Profile CARDS  -->
+                <div class="card-items" id="cardProfileCards">
+                    <div class="card-head">
+                        <h3 id="nameProyect">Profile Cards</h3>
+                    </div>
+                    <div class="card-body">
+                        <p id="descripcionCard">Este proyecto es una plantilla con 4 cartas de perfiles diferentes. Cada perfil incluye una imagen, nombre, un párrafo y un enlace para ver más información. </p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btnCard githubPage" href="https://github.com/JoseDavidFernandez/Profile-Cards" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </section>
+            <!-- end CARDS PROYECTS ––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        </section>
+        <!-- end PROYECTS ––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div id="dropShadow"></div> <!-- style entre un descripcion y paginas -->
     </main>
-<!--  ===================================================== / MAIN ====================================================== -->
-
-
-<!--  ====================================================== FOOTER ====================================================== -->
+<!--- end MAIN
+========================================================================= -->
+<!--- FOOTER
+========================================================================= -->
     <footer class="footer">
         <!-- Redes Sociales (Linkedin, GitHub, Correo Electronico) -->
         <div class="social-media sm-footer">
@@ -121,8 +207,7 @@
             </a>
         </div>
     </footer>
-<!--  ===================================================== / FOOTER ====================================================== -->
-
-
+<!--- end FOOTER
+========================================================================= -->
 </body>
 </html>

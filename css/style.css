@@ -1,14 +1,11 @@
-
-
-/*-----------------------------------------------------------------------------------------------------------------------------
--------------------------------------------------------- GLOBAL  --------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------*/
+/* GLOBAL
+========================================================================= */
 *, *:before, *:after {
     box-sizing: inherit;
     margin: 0;
 }
 body{
-    background: white;
+    background-color: #1F232F;;
     font-family: Arial, Helvetica, sans-serif;
 }
 main {
@@ -17,32 +14,32 @@ main {
     flex-wrap: wrap;
     justify-content: center;
 }
-/*  -------- UTILITY CLASES: TITULOS --------    */
+/*  -------- UTILITY CLASES  --------    */
 .container {
     max-width: 1200px;
     width: 90%;
     margin: auto;
 }
-.main-wrap { margin: 10vh 13.5vw; }
 .wrap{
     max-width: 1100px;
     margin: 0 auto;
     background: white;   
-
 }
 #startFix{ padding-top: 190px; } /* Separación para parrafos al principio */
 #endFix{ padding-top: 150px; width: 100%; } /* Separación para parrafos al final */
-#dropShadow {  /* -- style entre un descripcion y paginas -- */
+/* #dropShadow {
     display: block;
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(0,0,0,0.09) 0%, rgba(0,0,0,0) 100%);
     height: 85px;
     width: 100vw;
-}
-
-
-/*  ------------------------- MENÚ NAVBAR --------------------------------- */
-/********** (DESKTOP MODE)**********/
+} */
+/* end GLOBAL
+========================================================================= */
+/* MENÚ NAVBAR
+========================================================================= */
+/* (DESKTOP MODE)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .navbar input[type="checkbox"],
 .navbar .hamburger-lines {
     display: none;
@@ -64,7 +61,8 @@ main {
     justify-content: space-between;
     align-items: center;
 }
-/* MENU (ENLACES) */
+/* MENU ENLACES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .menu-items {
     order: 2;
     display: flex;
@@ -81,36 +79,39 @@ main {
     color: #117964;
     transition: color 0.3s ease-in-out;
 }
-
-/* LOGO */
+/* LOGO
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .logo {
     order: 1;
     font-size: 2.3rem;
     margin-bottom: 0.5rem;
-}  
-
-/*  ------------------------- FOOTER --------------------------------- */
+}
+/* end  MENU NAVBAR
+========================================================================= */  
+/* FOOTER
+========================================================================= */
 .footer{
     width: 100%;
-    height: 50px;
-    text-align: center;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #1F232F;
 }
 /* SOCIAL MEDIA ICONS */
 .sm-footer{ padding: 15px; }
 .sm-icon {
-    font-size: 15pt;
+    font-size: 25pt;
     color: white;
     padding: 5px 15px;
     margin-right: 0;
 }
-
-
-
-/*-----------------------------------------------------------------------------------------------------------------------------
------------------------------------------------------- FONTS & TEXTSTYLES -----------------------------------------------------
------------------------------------------------------------------------------------------------------------------------------*/
-/*  -------- GLOBAL STYLES --------    */
+/* end FOOTER
+========================================================================= */
+/* FONTS & TEXTSTYLES
+========================================================================= */
+/* GLOBAL STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1{ font-family: 'Raleway'; }
 h2{ font-family: 'Raleway'; font-size: 30px;}
 h3{ font-family: 'Raleway'; font-size: 22px; letter-spacing: 0.07em}
@@ -125,51 +126,63 @@ a{
     cursor: pointer;
     color: white;
 }
-
-/*  -------- NAV MENÚ --------    */
+/* NAV MENÚ
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .menu-items li {
     font-family: 'Raleway';
     font-size: 1.2rem;
     letter-spacing: 0.07em;
     color: #fff;
 }
-
-/* TITULO HEADER H2 (PROYECTS, ABOUT) */
-#titleHeader { color: white; letter-spacing: 0.07em; }
-
-
-
-/*-----------------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------- INDEX.html ------------------------------------------------------------
------------------------------------------------------------------------------------------------------------------------------*/
-/* INDEX.HTML -> STYLE
+/* TITULO BIENVENIDA
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* TITULO BIENVENIDA */
 #introText h1{
     color: white;
     font-size: 6vw;
     letter-spacing: 0.07em;
     text-align: center;
 }
-/* TITULO PRESENTACIÓN NOMBRE */
-#indexBody h3 { color: #1F232F; }
-#indexBody h2{ font-size: 46px; color: #1F232F; }
-
-/* PARRAFO DESCRIPCION */
+/* TITULO PRESENTACIÓN NOMBRE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.about h3 { color: #1F232F; }
+.about h2{ font-size: 46px; color: #1F232F; }
+/* PARRAFO DESCRIPCION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 #indexDescripcion {font-style: italic;}
-
-
+#introBack{background-color:#1F232F;}
+/* TITULO HEADER H2 (PROYECTS)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#titleHeader { color: white; letter-spacing: 0.07em; }
+/* PARRAFO DESCRIPCION PROYECT
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.proyect-descripcion p{ font-style: italic;}
+/* ICON GITHUB
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.icon-proyectsGitHub{
+    font-weight: 800; 
+    color: #1F232F; 
+    font-size: 16pt; 
+    text-align: center; 
+}
+/* ICON WEB + GITHUB -> CARDS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.btnCard{
+    color: #1F232F;
+    padding: 1rem;
+    font-size: 18pt;
+}
+/* end FONTS & TEXTSTYLES
+========================================================================= */
+/* index.HTML
+========================================================================= */
 /* INDEX.HTML -> SECTION INTROHEADER: 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-#introHeader{
+.intro-header{
     display: flex;
     justify-content: center;
     align-items: center;
     background: #1F232F;
     width: 100%;
-}
-#introBack{
-    background-color:#1F232F;
 }
 #introImg{
     height: 90%; 
@@ -179,10 +192,9 @@ a{
 }
 #introSaludo{ position: absolute; }
 #introText h1{ margin: 0px 0px; }
-
-/* INDEX.HTML -> SECTION INDEXBODY: 
+/* INDEX.HTML -> SECTION ABOUT: 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-#indexBody {
+.about {
     width: 100vw;
     background-color: white;
     z-index: 10;
@@ -192,6 +204,18 @@ a{
     height: 3px;
     background-color: #1F232F;
     margin-bottom: 20px;
+}
+/* SKILLS ABOUT  */
+.skills img{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+/* IMG ABOUT  */
+#imgProfile{
+    width: 50vh;
+    height: 50vh;
+    opacity: 90%;
 }
 .introbtn{ margin-top: 25px !important; }
 .btn{
@@ -207,73 +231,27 @@ a{
     background-color: #1F232F;
     color: white;
 }
-
-
-/* INDEX.HTML -> SECTION CARDS: 
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.flex-card{
+.box-img-about{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center
-}
-.index-card-container{
-    display: flex;
-    width: 20rem;
-    height: 20rem;
-    /* width: 905px;
-    height: 250px; */
-    margin: 10px;
-    background: #1F232F;
     justify-content: center;
-    align-items: center;
-    box-shadow: 0 20px 40px rgba(87,84,84,0.328);
-    font-family: 'Raleway';
-    font-size: 30px;
 }
-
-.index-card-container:hover{ 
-    animation:shadow-pop-top-right 0.4s linear both;  
-} 
-
-
-/*-----------------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------- PROYECTS.html ------------------------------------------------------------
------------------------------------------------------------------------------------------------------------------------------*/
-/* PROYECTS.HTML -> STYLE
+/* INDEX.HTML -> SECTION PROYECTS: 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.proyects{ 
+    width: 100%; 
+    background: #1F232F;
+    text-align: center;
+}
 /* TITULO HEADER */
 #titleHeader { 
     color: white; 
     letter-spacing: 0.07em;
-    padding: 150px 0 200px 0;
+    padding: 100px 0 100px 0;
 }
-/* PARRAFO DESCRIPCION PROYECT */
-.proyect-descripcion p{ font-style: italic;}
-
-/* ICON GITHUB */
-.icon-proyectsGitHub{font-weight: 800; color: #1F232F; font-size: 16pt; text-align: center; }
-
-/* ICON WEB + GITHUB -> CARDS */
-.btnCard{
-    color: #1F232F;
-    padding: 1rem;
-    font-size: 18pt;
-}
-
-/* PROYECTS.HTML -> SECTION HEADER: 
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.main-header{ 
-    width: 100%; 
-    height: 300px;
-    background: #1F232F;
-    text-align: center;
-}
-
-/* PROYECTS.HTML -> SECTION DESCRIPCION: 
+/* INDEX.HTML -> SECTION PROYECTS DESCRIPCION: 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .proyect-descripcion { padding: 10vh 3vh; } 
-
-/* PROYECTS.HTML -> SECTION CARDS: 
+/* INDEX.HTML -> SECTION PROYECTS CARDS: 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .proyects-main-cards{
     display: flex !important;
@@ -298,75 +276,30 @@ a{
     transform: rotate(1deg);
     box-shadow: 0 20px 40px rgba(16,14,14,0.5);   
 }
-
-/*-----------------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------- ABOUT.html ------------------------------------------------------------
------------------------------------------------------------------------------------------------------------------------------*/
-/* ABOUT.HTML -> STYLE
+/* end index.HTML
+========================================================================= */
+/* ANIMACIONES
+========================================================================= */
+/* ANIMACIÓN IMG BACK AMPLITUD 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* TITULO HEADER */
-#titleHeader { 
-    color: white; 
-    letter-spacing: 0.07em;
-    padding: 150px 0 200px 0;
-}
-
-/* ABOUT.HTML -> SECTION HEADER: 
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.main-header{ 
-    width: 100%; 
-    height: 300px;
-    background: #1F232F;
-    text-align: center;
-}
-
-/* ABOUT.HTML -> SECTION BIOGRAFIA: 
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.bio{
-    width: 100%;
-    height: auto;
-    text-align: center;
-}
-
-/*  DESCRIPCION ABOUT */
-.about-bio { padding: 0vh 3vh; font-style: italic;  }
-
-/* SKILLS ABOUT  */
-.skills{ padding: 1rem; }
-.skills img{
-    width: 50px;
-    height: 50px;
-    padding: 10px;
-}
-
-/* IMG ABOUT  */
-#aboutImgProfile{
-    width: 50vh;
-    height: 50vh;
-    opacity: 90%;
-}
-
-
-/*-----------------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------ ANIMACIONES  -----------------------------------------------------------
------------------------------------------------------------------------------------------------------------------------------*/
-
-/********** ANIMACIÓN IMG BACK AMPLITUD **********/
 #introPic {
     height: 100vh;
     margin-left: 50%;
     opacity: 55%;
     animation: introPicScale 12s infinite;
 }
-/********** ANIMACIÓN CARDS INDEX **********/
+/* ANIMACIÓN CARDS INDEX
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 @keyframes shadow-pop-top-right{
     0%{box-shadow:0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e;transform:translateX(0) translateY(0)}
     100%{box-shadow:1px -1px #3e3e3e,2px -2px #3e3e3e,3px -3px #3e3e3e,4px -4px #3e3e3e,5px -5px #3e3e3e,6px -6px #3e3e3e,7px -7px #3e3e3e,8px -8px #3e3e3e;transform:translateX(-8px) translateY(8px)}
 }
-
-/*-----------------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------ MEDIA QUERY -----------------------------------------------------------
------------------------------------------------------------------------------------------------------------------------------*/
+/* end ANIMACIONES
+========================================================================= */
+/* MEDIA QUERY (RESPONSIVE)
+========================================================================= */
+/* FOR 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media screen and (max-width: 2000px) {
     @keyframes introPicScale {
         0% { transform: translate(0%) scale(-1.1, 1.1); -webkit-transform: translate(0%) scale(-1.1, 1.1); -moz-transform: translate(0%) scale(-1.1, 1.1); -ms-transform: translate(0%) scale(-1.1, 1.1); -o-transform: translate(0%) scale(-1.1, 1.1); }
@@ -374,6 +307,8 @@ a{
         100% { transform: translate(0%) scale(-1.1, 1.1); -webkit-transform: translate(0%) scale(-1.1, 1.1); -moz-transform: translate(0%) scale(-1.1, 1.1); -ms-transform: translate(0%) scale(-1.1, 1.1); -o-transform: translate(0%) scale(-1.1, 1.1); }
     }
 }
+/* FOR 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media screen and (max-width: 1200px) {
     .wrap{ padding: 0 40px; }
     @keyframes introPicScale {
@@ -382,6 +317,8 @@ a{
         100% { transform: translate(0%) scale(-1.0, 1.0); -webkit-transform: translate(0%) scale(-1.0, 1.0); -moz-transform: translate(0%) scale(-1.0, 1.0); -ms-transform: translate(0%) scale(-1.0, 1.0); -o-transform: translate(0%) scale(-1.0, 1.0); }
     }
 }
+/* FOR 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media screen and (max-width: 768px) {
     .wrap { 
         padding: 0 40px; 
@@ -402,7 +339,8 @@ a{
         z-index: 5;
         opacity: 0;
     }
-    /* HAMBURGER  */
+    /* HAMBURGER
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
     .hamburger-lines {
         height: 23px;
         width: 35px;
@@ -432,7 +370,8 @@ a{
         transform-origin: 0% 100%;
         transition: transform 0.4s ease-in-out;
     }
-    /* MENU (ENLACES) */
+    /* MENU (ENLACES)
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
     .menu-items {
         padding-top: 110px;
         padding-bottom: 100px;
@@ -452,7 +391,8 @@ a{
         font-size: 1.3rem !important;
         font-weight: 500;
     }
-    /* LOGO */
+    /* LOGO
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
     .logo {
         position: absolute;
         top: 20px;
@@ -473,6 +413,8 @@ a{
         transform: rotate(-35deg);
     }
 }
+/* FOR 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media (max-width: 500px) {
     .wrap {
         padding: 0 40px; 
@@ -481,17 +423,21 @@ a{
         width: 45vh !important;
         height: 50vh;
     }
-    /* LOGO */
+    /* LOGO 
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
     .logo {
         position: absolute;
         top: 06px;
         right: 15px;
         font-size: 3rem;
     }
-    /* MENU (ENLACES) */
+    /* MENU (ENLACES)
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
     .menu-items li {
         margin-bottom: 2.5rem;
         font-size: 1.8rem;
         font-weight: 500;
     }
 }
+/* end MEDIA QUERY (RESPONSIVE)
+========================================================================= */
